@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#151515</color>
+    <color name="colorSetting_content">#646464</color>
+    <color name="colorListline">#B8BDC2</color>
+    <color name="colorShadow">#34333333</color>
+    <color name="colorLongbar">#B2B1B0</color>
+    <color name="colorBtnOn">#1A000000</color>
+    <color name="colorBtnDisable">#1A000000</color>
+    <color name="list_divider">#e5e5e5</color>
+    <color name="colorLocationLine">#E0E0E0</color>
+    <color name="colorLocationBackground">#ECECEC</color>
+    <color name="colorActivtyBackgroud">#F3F4F4</color>
+    <color name="colorInactiveWhite">#81ffffff</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="list_select">#FF4081</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentA8">#A8FF4081</color>
+    <color name="colorOrange">#FFA500</color>
+    <color name="colorintroBackground">#FFCB09</color>
+    <color name="colorBtnOff">#FECE06</color>
+    <color name="colorToggleOff">#FDF4EA</color>
+    <color name="colorLemonbar">#ffff48</color>
+    <color name="colorCalendarSelect">#81c147</color>
+    <color name="colorLocationTip">#008BD3</color>
+</resources>

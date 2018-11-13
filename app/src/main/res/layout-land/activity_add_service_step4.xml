@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ighai.testapp.activity.AddServiceStep4Activity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:background="@color/colorLongbar" />
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ToggleButton
+                                android:id="@+id/day_7"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_sun"
+                                android:textOff="@string/msd_title_sun"
+                                android:checked="true"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(7)}" />
+
+                            <ToggleButton
+                                android:id="@+id/day_1"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_mon"
+                                android:textOff="@string/msd_title_mon"
+                                android:checked="false"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(1)}" />
+
+                            <ToggleButton
+                                android:id="@+id/day_2"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_tue"
+                                android:textOff="@string/msd_title_tue"
+                                android:checked="false"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(2)}" />
+
+                            <ToggleButton
+                                android:id="@+id/day_3"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_wed"
+                                android:textOff="@string/msd_title_wed"
+                                android:checked="false"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(3)}" />
+
+                            <ToggleButton
+                                android:id="@+id/day_4"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_thu"
+                                android:textOff="@string/msd_title_thu"
+                                android:checked="false"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(4)}" />
+
+                            <ToggleButton
+                                android:id="@+id/day_5"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_fri"
+                                android:textOff="@string/msd_title_fri"
+                                android:checked="false"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(5)}" />
+
+                            <ToggleButton
+                                android:id="@+id/day_6"
+                                android:layout_width="40dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textOn="@string/msd_title_sat"
+                                android:textOff="@string/msd_title_sat"
+                                android:checked="false"
+                                android:textColor="@android:color/black"
+                                android:background="@drawable/tab_background_land"
+                                android:textSize="14dp"
+                                android:onClick="@{(view) -> viewModel.onTab(6)}" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="39dp"
+                            android:background="@color/colorWhite">
+
+                            <com.astuetz.PagerSlidingTabStrip
+                                android:id="@+id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="39dp"
+                                app:pstsDividerColor="@color/colorLongbar"
+                                app:pstsDividerWidth="0.6dp"
+                                app:pstsIndicatorColor="@color/colorBtnOff"
+                                app:pstsIndicatorHeight="3dp"
+                                app:pstsShouldExpand="true"
+                                app:pstsTabBackground="@android:color/transparent"
+                                app:pstsTabTextColor="@android:color/black" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.1dp"
+                                android:layout_gravity="bottom"
+                                android:background="@color/colorLongbar" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/viewpager1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@drawable/top_manu_shdow" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/setting"
+            android:onClick="@{(view) -> viewModel.onFinish()}" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

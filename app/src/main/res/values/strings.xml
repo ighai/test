@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="setting">설정 하기</string>
+
+    <string name="msd_title_mon">월</string>
+    <string name="msd_title_tue">화</string>
+    <string name="msd_title_wed">수</string>
+    <string name="msd_title_thu">목</string>
+    <string name="msd_title_fri">금</string>
+    <string name="msd_title_sat">토</string>
+    <string name="msd_title_sun">일</string>
+</resources>

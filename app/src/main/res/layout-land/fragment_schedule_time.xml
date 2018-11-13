@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/sv1"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb07"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb08"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorListline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb09"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorListline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorListline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorListline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorListline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorListline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tb19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+            <View android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorListline"/>
+
+            <ToggleButton
+                android:id="@+id/tb25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:background="@drawable/schedule_time_toggle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

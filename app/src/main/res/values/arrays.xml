@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="schedule_time">
+        <item>오전 07:00 ~ 오전 08:00</item>
+        <item>오전 08:00 ~ 오전 09:00</item>
+        <item>오전 09:00 ~ 오전 10:00</item>
+        <item>오전 10:00 ~ 오전 11:00</item>
+        <item>오전 11:00 ~ 오전 12:00</item>
+        <item>오전 12:00 ~ 오후 13:00</item>
+        <item>오후 13:00 ~ 오후 14:00</item>
+        <item>오후 14:00 ~ 오후 15:00</item>
+        <item>오후 15:00 ~ 오후 16:00</item>
+        <item>오후 16:00 ~ 오후 17:00</item>
+        <item>오후 17:00 ~ 오후 18:00</item>
+        <item>오후 18:00 ~ 오후 19:00</item>
+        <item>오후 19:00 ~ 오후 20:00</item>
+        <item>새벽</item>
+    </string-array>
+
+</resources>
