@@ -10,6 +10,7 @@ import android.widget.ToggleButton;
 
 import com.ighai.testapp.R;
 import com.ighai.testapp.adapter.ScheduleDateSelectAdapter;
+import com.ighai.testapp.dto.DayOfWeekTimes;
 import com.ighai.testapp.dto.ServiceSettingDayOfWeek;
 import com.ighai.testapp.databinding.ActivityAddServiceStep4Binding;
 import com.ighai.testapp.fragment.ScheduleLimitFragment;
@@ -32,6 +33,7 @@ public class AddServiceStep4Activity extends AppCompatActivity {
     private ServiceSettingDayOfWeek mDayOfWeekData = new ServiceSettingDayOfWeek();
     private int mPage;
     private int mWeek;
+    private SendDataForFragment setDayOfWeek;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +96,10 @@ public class AddServiceStep4Activity extends AppCompatActivity {
         }
     }
 
+    public void setListener(SendDataForFragment setDayOfWeek) {
+        this.setDayOfWeek = setDayOfWeek;
+    }
+
     public void onFinish() {
         Log.d("최종", mDayOfWeekData.toString());
     }
@@ -109,7 +115,7 @@ public class AddServiceStep4Activity extends AppCompatActivity {
             mPage = i;
             if(adapter.getItem(i) instanceof ScheduleTimeFragment) {
                 ((ScheduleTimeFragment) adapter.getItem(mPage)).mBtnChanged = false;
-                ((ScheduleTimeFragment) adapter.getItem(mPage)).setDayOfWeek(mDayOfWeekData.getDayOfWeekTimes(), mWeek);
+                setDayOfWeek.setDayOfWeek(mDayOfWeekData.getDayOfWeekTimes(), mWeek);
             }
             if(adapter.getItem(i) instanceof ScheduleLocationFragment) {
                 ((ScheduleTimeFragment) adapter.getItem(0)).mBtnChanged = true;

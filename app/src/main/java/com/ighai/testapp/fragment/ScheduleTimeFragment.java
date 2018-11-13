@@ -14,6 +14,8 @@ import android.widget.ScrollView;
 import android.widget.ToggleButton;
 
 import com.ighai.testapp.R;
+import com.ighai.testapp.activity.AddServiceStep4Activity;
+import com.ighai.testapp.activity.SendDataForFragment;
 import com.ighai.testapp.dto.DayOfWeekTimes;
 
 import java.util.ArrayList;
@@ -37,6 +39,7 @@ public class ScheduleTimeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Log.d("생명주기", "onCreateView");
         view =  inflater.inflate(R.layout.fragment_schedule_time, container, false);
         initUI(view);
 
@@ -50,12 +53,14 @@ public class ScheduleTimeFragment extends Fragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        Log.d("생명주기", "onActivityCreated");
         super.onActivityCreated(savedInstanceState);
         setUI();
     }
 
     @Override
     public void onResume() {
+        Log.d("생명주기", "onResume");
         super.onResume();
         initUI(view);
     }
@@ -86,6 +91,7 @@ public class ScheduleTimeFragment extends Fragment {
         tb18 = (ToggleButton) view.findViewById(R.id.tb18);
         tb19 = (ToggleButton) view.findViewById(R.id.tb19);
         tb25 = (ToggleButton) view.findViewById(R.id.tb25);
+        Log.d("initUI", view.findViewById(R.id.sv1).getId()+"");
     }
 
     private void setUI() {
@@ -111,6 +117,7 @@ public class ScheduleTimeFragment extends Fragment {
             tb.get(i).setTextOn(getResources().getStringArray(R.array.schedule_time)[i]);
             tb.get(i).setTextOff(getResources().getStringArray(R.array.schedule_time)[i]);
         }
+        ((AddServiceStep4Activity)getActivity()).setListener(setDayOfWeek);
     }
 
     private CompoundButton.OnCheckedChangeListener mChangeListener =  new CompoundButton.OnCheckedChangeListener() {
@@ -141,23 +148,46 @@ public class ScheduleTimeFragment extends Fragment {
         }
     };
 
-    public void setDayOfWeek(ArrayList<DayOfWeekTimes> times, int mDayOfWeek) {
-        Log.d("데이터 받음 - 시간", times.toString());
-        this.mBtnChanged = true;
-        this.times = times;
-        this.mDayOfWeek = mDayOfWeek;
-        try {
-            sv1.fullScroll(View.FOCUS_UP);
-            for(ToggleButton tb : tb) {
-                tb.setChecked(false);
-            }
-            for(DayOfWeekTimes mt : times) {
-                tb.get(mt.getTimes()).setChecked(true);
-            }
-        } catch (NullPointerException e) {
+    public SendDataForFragment setDayOfWeek = new SendDataForFragment() {
+        @Override
+        public void setDayOfWeek(ArrayList<DayOfWeekTimes> timess, int mDayOfWeeks) {
+            Log.d("데이터 받음 - 시간", times.toString() + " - " + tb.size());
+            mBtnChanged = true;
+            times = timess;
+            mDayOfWeek = mDayOfWeeks;
+            try {
+                sv1.fullScroll(View.FOCUS_UP);
+                for(ToggleButton tb : tb) {
+                    tb.setChecked(false);
+                }
+                for(DayOfWeekTimes mt : times) {
+                    tb.get(mt.getTimes()).setChecked(true);
+                }
+            } catch (NullPointerException e) {
 
-            Log.d("에러", "널 포인트");
+                Log.d("에러", "널 포인트 " + e.toString());
+            }
+            mBtnChanged = false;
         }
-        this.mBtnChanged = false;
-    }
+    };
+
+//    public void setDayOfWeek(ArrayList<DayOfWeekTimes> timess, int mDayOfWeeks) {
+//        Log.d("데이터 받음 - 시간", times.toString() + " - " + tb.size());
+//        mBtnChanged = true;
+//        times = timess;
+//        mDayOfWeek = mDayOfWeeks;
+//        try {
+//            sv1.fullScroll(View.FOCUS_UP);
+//            for(ToggleButton tb : tb) {
+//                tb.setChecked(false);
+//            }
+//            for(DayOfWeekTimes mt : times) {
+//                tb.get(mt.getTimes()).setChecked(true);
+//            }
+//        } catch (NullPointerException e) {
+//
+//            Log.d("에러", "널 포인트 " + e.toString());
+//        }
+//        this.mBtnChanged = false;
+//    }
 }

@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.ighai.testapp.activity.SendDataForFragment;
 import com.ighai.testapp.fragment.ScheduleLimitFragment;
 import com.ighai.testapp.fragment.ScheduleLocationFragment;
 import com.ighai.testapp.fragment.ScheduleTimeFragment;
